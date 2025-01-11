@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import MetricDropdown from "./components/MetricDropdown";
 import DeviceDropdown from "./components/DeviceDropdown";
 import Graph from "./components/Graph";
-
+import Footer from "./components/Footer";
 const App = () => {
   const [selectedMetric, setSelectedMetric] = useState("lcp"); 
   const [selectedDevice, setSelectedDevice] = useState("desktop"); 
@@ -72,7 +72,7 @@ const App = () => {
           <Graph data={graphData} />
         )}
       </div>
-    </div>
+      <Footer /></div>
   );
 };
 
